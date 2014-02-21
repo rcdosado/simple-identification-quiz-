@@ -1,15 +1,16 @@
-simple-identification-quiz-
+Simple-identification-quiz
 ===========================
 
 U.S state capitals identification quiz
 
-features
+Features
 --------
   * questions are inside a csv file, easily customizable for different contextual quizzes
   * random questions every execution (questions are shuffled every execution)
   * implemented as a Map (not thread friendly though)
-  * ability to look up the key given the value, find getKeyFromValue method.
+  * implements simple dictionary algorithm
+  * ability to look up the dictionary key given the value (see getKeyFromValue method)
 
 Notes
 -----
-  this is a quick prototype, no refactoring,proper formatting whatsoever (forgive the mess).
+  this is a quick prototype, no refactoring,proper formatting whatsoever (forgive the mess) :).
