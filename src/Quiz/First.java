@@ -60,15 +60,17 @@ public class First {
 		String state,askthis;
 		int correct=0,mistakes=0,ctr=0;
 		
-		/*
+		
 		if(args.length != 1){
-			System.out.println("quizfile not found ");
+			System.out.println("USAGE: java Quiz/First <quiz file>");
+			System.out.println("*where quiz file is a CSV file containing <state,capital> combination ");
+			System.out.println("*its important that First.class must be inside the Quiz folder");
 			return;
 		}
 		
 		dict = createDict(args[0]);
-		*/
-		dict = createDict("c:\\tmp\\statecaps.csv");
+
+		//dict = createDict("c:\\tmp\\statecaps.csv");
 		List<String> list = new ArrayList<String>(dict.values());		
 		java.util.Collections.shuffle((List<?>) list);		
 		Iterator<String> iterator = list.iterator();
@@ -98,7 +100,7 @@ public class First {
 
 		}while (iterator.hasNext());	
 		System.out.print("Overall Score : "+correct+"/"+(correct+mistakes));
-		System.out.print("\n---- End Of Quiz ----");
+		System.out.print("\n---- End Of Quiz ----\n\n");
 	}
 
 }
